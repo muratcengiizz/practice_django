@@ -1,0 +1,44 @@
+{% load static %}
+ <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}"><i class='uil uil-user'></i> Murat</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="{% url 'index' %}" class="nav-link"><span data-hover="Ana Sayfa">Ana Sayfa</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'yazilar' %}" class="nav-link"><span data-hover="Yazılar">Yazılar</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'index' %}" class="nav-link"><span data-hover="Portfolyo">Portfolyo</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'hakkimda' %}" class="nav-link"><span data-hover="Hakkımda">Hakkımda</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'iletisim' %}" class="nav-link"><span data-hover="İletişim">İletişim</span></a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-lg-auto">
+                <div class="ml-lg-4">
+                  <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                    <i class="color-mode-icon"></i>
+                    
+                    
+                  </div>
+                  
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>

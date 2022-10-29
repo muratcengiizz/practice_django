@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ yazi.on_baslik }}</title>
+    <link rel="stylesheet" href="{% static 'css/yazilar.css' %}">
+    <link rel="icon" href="{% static 'img/mc_logo.jpg' %}" type="image/x-icon" />
+</head>
+<body>
+   
+    <div class="top">
+        <div class="header">
+          <h1 ><span >{{ yazi.on_baslik }}</span></h1>
+          <!--<h2 class="author"><a href="#">Murat Cengiz</a></h2>-->
+          <!--<div class="pause" id="i"><a href="#i"></a></div>-->
+        <div class="social">
+          <a href=""><img src="https://thomasfranks.co.uk/img/fb.png" alt="facebook" title="Visit Facebook Page" /></a>
+          <a href=""><img src="https://thomasfranks.co.uk/img/twit.png" alt="twitter" title="Follow on Twitter" /></a>
+        </div>
+      </div>
+      </div>
+      <div class="content">
+
+        <!--<div class="date">   <span>Ekim</span> <span class="day">20</span>   </div>-->
+        
+        
+            <div class="article">
+                <h2>{{ yazi.baslik }}</h2>
+                <h3>  Posted by <a href="{% url 'index' %}">Murat</a>  <span class="date-line"> 22 Mayıs</span>  </h3>
+                
+                <img src="{{ yazi.main_image.url }}" style="max-height:600px;"/>
+                
+                <p class="firstpara">   <span class="firstcharacter"> {{ yazi_first }} </span> {{ yazi.yazi1 }} </p> 
+                
+                <div class="pause" id="i"><a href="#i"></a></div>
+                
+                <img src="{{ yazi.image1.url }}" style="max-height:600px;"/>
+                
+                <div class="pause" id="i"><a href="#i"></a></div>
+                
+                <p style="max-width:600px;">{{ yazi.yazi2 }}</p>
+            </div>
+        
+      
+
+      
+      <div class="footer">
+        <span class="copy">&copy; <a href="{% url 'index' %}">Murat Cengiz - MMXIII</a> </span>
+        </div>
+    
+</body>
+</html>

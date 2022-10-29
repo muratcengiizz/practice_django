@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="{% static 'css/iletisim.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+          <div class="address">
+            <p>Kurtköy, Pendik<br>İstanbul</p>
+          </div>
+          <div class="address">
+            <p>727.666.9999<br>727.420.6969</p>
+          </div>
+          <h1>İletişime Geç</h1>
+          <div class="thanks"><p>We'll be in touch soon,</p> </div>
+            <div class="pen"></div>
+        <form id="contact_form" action="" method="POST" >
+            {% csrf_token %}
+            <div class="row">
+                <label for="name">İsminizi Giriniz:</label><br />
+            
+              <div class="inputwrap"><input id="name" class="input" name="name" type="text" value="" size="30"></input><div class="bar"></div></div><br />
+            
+            </div>
+            <div class="row">
+                <label for="email">Mail Adresinizi Giriniz:</label><br /><div class="inputwrap">
+                <input id="email" class="input" name="mail" type="text" value="" size="30" />
+            <div class="bar"></div></div>
+            <br />
+            </div>
+            <div class="row">
+                <label for="message">Mesajınızı Giriniz:</label><br />
+                <div class="inputwrap"><input type="textarea" name="message"/><div class="bar"></div></div<br />
+            </div>
+          <div class="btnwrap"><input id="submit_button" type="submit" value="Gönder" /></div>
+        </form>			
+        </div>
+        </div>
+</body>
+</html>

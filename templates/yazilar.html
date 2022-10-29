@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="portfolio_details_area section_gap">
+    <div class="container">
+        
+        <hr>
+
+
+        {% for element in yazi %}
+        
+        
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img class="img-fluid" src=" {{ element.main_image.url }} " alt="" style="max-height:400px; max-width:350px; min-height:400px;">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="">{{ element.on_baslik }} </h4>
+                            <p>
+                               {{ element.alt_baslik }} 
+                            </p>
+                            <ul class="list">
+                                
+
+                                <li><span>Yayın Tarihi</span>: {{ element.tarih }} </li> <br><br><br><br>
+                                <a href=" yazilar/{{ element.yazi_path }} " class="primary_btn"><span>Okumaya Devam Et</span></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+
+        
+        {% endfor %}
+
+
+    </div>
+</section>
+
+{% endblock %}

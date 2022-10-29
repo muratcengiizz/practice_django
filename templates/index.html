@@ -1,0 +1,319 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+  <div class="container">
+      <div class="row">
+          
+          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+              <div class="about-text">
+                  <small class="small-text">Web siteme hoş geldiniz! <span class="mobile-block"> </span></small>
+                  <h1 class="animated animated-text">
+                      <span class="mr-2">Hey &#128075;, Ben</span>
+                          <div class="animated-info" style="max-width:300px;">
+                              <span class="animated-item" style="max-width:300px;">Geliştiriciyim</span>
+                              <span class="animated-item" style="max-width:300px;">Araştırmacıyım</span>
+                              <!-- <span class="animated-item" style="max-width:300px;"> BEN KİMİM ? </span> -->
+                          </div>
+                  </h1>
+
+                  <p>Okumayı, öğrenmeyi ve araştırmayı seviyorum. Kendimi yapay zeka alanında geliştirmek için çalışmalar yapıyorum.</p>
+                  
+                  <div class="custom-btn-group mt-4">
+                    <!-- <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i></a>
+                    <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link"></a>-->
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12 col-12">
+              <div class="about-image svg">
+                  <img src="{% static 'images/home-right.png' %}" class="img-fluid" alt="svg image">
+                  <!-- <img src="{% static 'images/undraw/undraw_software_engineer_lvl5.svg' %}" class="img-fluid" alt="svg image">-->
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<!--
+
+<section class="project py-5" id="project">
+  <div class="container">
+          
+          <div class="row">
+            <div class="col-lg-11 text-center mx-auto col-12">
+
+                <div class="col-lg-8 mx-auto">
+                  <h2>Things I have designed for digital media agencies</h2>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="project-info">
+                      <img src="{% static 'images/project/project-image01.png' %}" class="img-fluid" alt="project image">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="project-info">
+                      <img src="{% static 'images/project/project-image02.png' %}" class="img-fluid" alt="project image">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="project-info">
+                      <img src="{% static 'images/project/project-image03.png' %}" class="img-fluid" alt="project image">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="project-info">
+                      <img src="{% static 'images/project/project-image04.png' %}" class="img-fluid" alt="project image">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="project-info">
+                      <img src="{% static 'images/project/project-image05.png' %}" class="img-fluid" alt="project image">
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+  </div>
+</section>
+-->
+
+
+
+<section class="features_area">
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-lg-8 text-center">
+    <div class="col-lg-8 mx-auto">
+      <h2>İLGİLENDİĞİM ALANLAR</h2>
+      <p>
+        Bu zaman kadar; veri bilimi, makine öğrenimi, görüntü işleme, web geliştirme
+           alanlarında kendimi geliştirdim.
+      </p> <br>
+    </div>
+  </div>
+</div>
+<div class="row feature_inner">
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/s1.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Veri Bilimi</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/s2.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Makine Öğrenimi</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/s4.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Görüntü İşleme</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/s3.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Web Geliştirme</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+</div>
+</section>
+<!--================ End Features Area =================-->
+
+
+<section class="features_area">
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-lg-8 text-center">
+    <div class="col-lg-8 mx-auto">
+      <h2>Kullandığım Teknolojiler</h2>
+      <p>
+        Genellikle Python yazılım dilinin framework 'leri üzerinden çalışıyorum.
+      <br> 
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row feature_inner">
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/python.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Python</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/django-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Django</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/html-logo.webp' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>HTML</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/linux-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Linux</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/postresql-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>PostreSQL</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/tensorflow-logo2.jpg' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Tensorflow</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/pandas-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Pandas</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <div class="feature_item">
+      <img src="{% static 'images/numpy-logo.png' %}" alt="" style="max-height:70px; max-width:70px;">
+      <h4>Numpy</h4>
+      <p></p>
+    </div>
+  </div>
+  
+
+  
+</div>
+</div>
+</section>
+<!--================ End Features Area =================-->
+
+
+<!-- FEATURES -->
+<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-lg-6 col-12">
+            <h2 class="mb-4">Deneyimler</h2>
+
+            <div class="timeline">
+    
+
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2022</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><span>Vizyon Koleji<small>Staj</small></h3>
+                          <p>Django ile web geliştirme</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <h2 class="mb-4 mobile-mt-2">Eğitimler</h2>
+
+              <div class="timeline">
+
+                <div class="timeline-wrapper">
+                  <div class="timeline-yr"><span>2021</span></div>
+                  <div class="timeline-info">
+                    <h3><span>Veri Bilimi İçin Python Ve TensorFlow</span><small>BTK Akademi</small></h3>
+                    <p> Yeterlilik Kimliği: <a href="">3d54dfed-3278-4bc6-a328-3ca20257d607</a> </p>
+                  </div>
+                </div>
+
+
+                  <div class="timeline-wrapper">
+                    <div class="timeline-yr"><span>2021</span></div>
+                    <div class="timeline-info">
+                      <h3><span>Etik Hacker İleri Seviye: Sızma Testleri &amp; Yetki Yükseltme</span><small>UDEMY</small></h3>
+                      <p> <a href="https://www.udemy.com/certificate/UC-b81f7393-d0ae-402c-9ad9-291ea13f5b45/" target="_blank">Yeterlilik Belgesini Göster</a> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="timeline-wrapper">
+                       <div class="timeline-yr">
+                            <span>2021</span>
+                       </div>
+                       <div class="timeline-info">
+                            <h3><span>Python: Sıfırdan İleri Seviyeye - Etik Hacker Örnekleriyle</span><small>UDEMY</small></h3>
+                            <p> <a href="https://www.udemy.com/certificate/UC-1642ae4e-4544-4b86-baae-1bb0739af979/" target="_blank">Yeterlilik Belgesini Göster</a> </p>
+                       </div>
+                  </div>
+
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2021</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><span>Etik Hacker Olma Kursu</span><small>UDEMY</small></h3>
+                          <p> <a href="https://www.udemy.com/certificate/UC-cff45e4b-d34c-4dc8-ae62-7744835336f1/" target="_blank">Yeterlilik Belgesini Göster</a> </p>
+                      </div>
+                  </div>
+                  
+                  <div class="timeline-wrapper">
+                    <div class="timeline-yr"><span>2021</span></div>
+                    <div class="timeline-info">
+                      <h3><span>Superead Anlayarak Hızlı Okuma</span><small>Superead</small></h3>
+                      <p> <a href="https://1drv.ms/b/s!AsBta3Vao9WgmkA8nCupEGLPwcE9" target="_blank">Yeterlilik Belgesini Göster</a> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2022</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><span>Sağlık Bilgi Sistemleri Teknikerliği</span><small>MAKÜ</small></h3>
+                          <p>Excel, C#, Java gibi teknolojiler ile eğitim aldım.</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+{% endblock %}
